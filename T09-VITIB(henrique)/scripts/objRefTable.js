@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.Platform,
+		C3.Behaviors.solid,
+		C3.Plugins.Text,
+		C3.Behaviors.Anchor,
+		C3.Behaviors.Sin,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Acts.ResetEventVar
+	];
+};
+self.C3_JsPropNameTable = [
+	{Plataforma: 0},
+	{vitib: 0},
+	{Sólido: 0},
+	{chão: 0},
+	{Sprite: 0},
+	{limbo: 0},
+	{Sprite2: 0},
+	{numero: 0},
+	{Âncora: 0},
+	{parabens: 0},
+	{perdeu: 0},
+	{Senóide: 0},
+	{Sprite3: 0},
+	{chão2: 0},
+	{Sprite4: 0},
+	{chão3: 0},
+	{Sprite5: 0},
+	{limbo2: 0},
+	{chão4: 0},
+	{Sprite6: 0},
+	{Sprite7: 0},
+	{pontos: 0},
+	{Sprite8: 0},
+	{contagem_Pontos: 0}
+];
+
+self.InstanceType = {
+	vitib: class extends self.ISpriteInstance {},
+	chão: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	limbo: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	numero: class extends self.ITextInstance {},
+	parabens: class extends self.ITextInstance {},
+	perdeu: class extends self.ITextInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	chão2: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	chão3: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	limbo2: class extends self.ISpriteInstance {},
+	chão4: class extends self.ISpriteInstance {},
+	Sprite6: class extends self.ISpriteInstance {},
+	Sprite7: class extends self.ISpriteInstance {},
+	pontos: class extends self.ITextInstance {},
+	Sprite8: class extends self.ISpriteInstance {}
+}
